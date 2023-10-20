@@ -31,7 +31,7 @@ Hungry for more? Just ask!
 
 ## Data Feeds  
 
-- https://datasf.org/opendata/
+- https://data.sfgov.org/resource/pyih-qa8i.json
 - https://data.cityofchicago.org/Health-Human-Services/Food-Inspections/4ijn-s7e5
 - https://www.dallasopendata.com/Services/Restaurant-and-Food-Establishment-Inspections-Octo/dri5-wcct
 - https://data.cincinnati-oh.gov/Thriving-Neighborhoods/Cincinnati-Food-Safety-Program/rg6p-b3h3
@@ -46,11 +46,11 @@ As a user, I want to be able to search for specific restaurants and retrieve det
 
 #### Dependencies  
 
-Data feeds from Cincinnati.gov are available and accessible.  
+Data feeds are available and accessible.  
 
 #### Assumptions  
 
-Data provided by Cincinnati.gov is regularly updated and accurate.  
+Data provided by those datasets are regularly updated and accurate.  
 
 #### Examples  
 
@@ -80,11 +80,11 @@ As a user, I want the ability to filter restaurant inspection data based on spec
 
 #### Dependencies  
 
-Data feeds from Cincinnati.gov are available and accessible.  
+Data feeds are available and accessible.  
 
 #### Assumptions  
 
-Data provided by Cincinnati.gov includes detailed information about restaurant locations, cuisine types, inspection ratings, and violation categories. 
+Data provided by the datasets include detailed information about restaurant locations, cuisine types, inspection ratings, and violation categories. 
  
 #### Examples  
 
@@ -109,7 +109,7 @@ Data provided by Cincinnati.gov includes detailed information about restaurant l
 **Then** I should receive a list of restaurants in Cincinnati that have been cited for hygiene violations, along with the specific violations and inspection details.  
 
 ## Roles  
-Frontend Developer: Harimohan Das, Roneena Menoky, Quinghua Huang  
+Frontend Developer: Harimohan Das, Roneena Menoky, Qinghua Huang  
 Integration Developer: Hima Sri Chunchu, Navya Pokuri, Harimohan Das
 
 ## Weekly Meeting  
