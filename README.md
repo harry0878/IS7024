@@ -17,7 +17,7 @@ Chunchu, Hima Sri
 
 ## Introduction  
 
-Welcome to **YumSafe**, your go-to site for staying informed about food safety and restaurant inspection data in your area.  
+Welcome to **YumSafe**, you go to sites for staying informed about food safety and restaurant inspection data in your area.  
 
 Hungry for knowledge about the cleanliness and safety of your favorite eateries? Craving the latest restaurant inspection reports? You've come to the right place!  
 
@@ -91,22 +91,22 @@ Data provided by the datasets include detailed information about restaurant loca
  
 #### Examples  
 
-1.1  
+2.1  
 **Given** a feed of restaurant inspection data is available  
 **When** I search for restaurants in the "Downtown" area  
 **Then** I should receive a list of restaurants located in the downtown area, including detailed inspection data for each restaurant.  
 
-1.2  
+2.2  
 **Given** a feed of restaurant inspection data is available  
 **When** I filter restaurants by cuisine type and select "Italian"  
 **Then** I should receive a list of Italian restaurants in Cincinnati, along with their inspection ratings and violation details.
 
-1.3  
+2.3  
 **Given** a feed of restaurant inspection data is available  
 **When** I filter restaurants by inspection rating and choose "Excellent" (rating >= 90%)  
 **Then** I should receive a list of restaurants in Cincinnati with excellent inspection ratings, along with their detailed inspection data.
 
-1.4  
+2.4  
 **Given** a feed of restaurant inspection data is available  
 **When** I filter restaurants by violation category and select "Hygiene Violations"  
 **Then** I should receive a list of restaurants in Cincinnati that have been cited for hygiene violations, along with the specific violations and inspection details.  
@@ -116,7 +116,8 @@ Frontend Developer: Harimohan Das, Roneena Menoky, Qinghua Huang
 Integration Developer: Hima Sri Chunchu, Navya Pokuri, Harimohan Das
 
 ## Weekly Meeting  
-Friday at 4:30 PM at Lindner
+When: Friday at 4:30 PM, Thursday at 4:00 PM
+Where: Lindner reserved group meeting room
 
 
 
