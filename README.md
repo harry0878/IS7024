@@ -34,7 +34,7 @@ Hungry for more? Just ask!
 
 ## Data Feeds  
 
-- https://data.sfgov.org/resource/pyih-qa8i.json
+- https://data.sfgov.org/Health-and-Social-Services/Restaurant-Scores-LIVES-Standard/pyih-qa8i
 - https://data.cityofchicago.org/Health-Human-Services/Food-Inspections/4ijn-s7e5
 - https://www.dallasopendata.com/Services/Restaurant-and-Food-Establishment-Inspections-Octo/dri5-wcct
 - https://data.cincinnati-oh.gov/Thriving-Neighborhoods/Cincinnati-Food-Safety-Program/rg6p-b3h3
