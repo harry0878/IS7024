@@ -3,7 +3,7 @@
 ![YumSafe](https://github.com/harry0878/IS7024/assets/143024559/5232ae30-bed5-4e9b-bb42-0c9a18b98c16)
 
 
-Design Document By:  
+Design Document by:  
 
 Das, Harimohan  
 
