@@ -17,7 +17,7 @@ Chunchu, Hima Sri
 
 ## Introduction  
 
-Welcome to **YumSafe**, you go to sites for staying informed about food safety and restaurant inspection data in your area.  
+Welcome to **YumSafe**, your go to site for staying informed about food safety and restaurant inspection data in your area.  
 
 Hungry for knowledge about the cleanliness and safety of your favorite eateries? Craving the latest restaurant inspection reports? You've come to the right place!  
 
