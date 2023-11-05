@@ -1,7 +1,12 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\xmlproject",
+    "\\xmlproject\\xmlproject",
+    "\\xmlproject\\xmlproject\\bin",
+    "\\xmlproject\\xmlproject\\obj",
+    "\\xmlproject\\xmlproject\\Pages"
   ],
-  "SelectedNode": "\\C:\\Users\\Harry\\Source\\Repos\\IS7024",
+  "SelectedNode": "\\xmlproject\\xmlproject",
   "PreviewInSolutionExplorer": false
 }
