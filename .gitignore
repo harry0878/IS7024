@@ -361,3 +361,5 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/xmlproject/.vs/xmlproject/v17/.suo
+/xmlproject/xmlproject/obj/Debug/net6.0/xmlproject.GeneratedMSBuildEditorConfig.editorconfig
