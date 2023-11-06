@@ -1,0 +1,51 @@
+﻿@page
+@model xmlproject.Pages.ReviewsFormModel
+@{
+}
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+
+<body>
+
+    <div class="container mt-5">
+        <h4> Review Your Restaurant </h4>
+
+        <form id="suggest" class="needs-validation" method="post" enctype="multipart/form-data" asp-page="/Submit">
+
+            <div class="form-group">
+                <label for="restaurantName">Restaurant</label>
+                <input type="text" class="form-control" id="restaurantName" name="restaurantName" required />
+            </div>
+            <div class="form-group">
+                <label for="name"> First Name </label>
+                <input type="text" class="form-control" id="FirstName" name="FirstName" required />
+            </div>
+            <div class="form-group">
+                <label for="name"> Last Name </label>
+                <input type="text" class="form-control" id="LastName" name="LastName" required />
+            </div>
+            <div class="form-group">
+                <label for="email"> Email </label>
+                <input type="email" class="form-control" id="email" name="email" required />
+            </div>
+            
+
+            <div class="form-group">
+                <label for="directions">Tell us about your experience</label></br>
+                <textarea class="form-control" rows="5" cols="60" id="experience" name="experience" required></textarea>
+
+            </div>
+
+            <button type="submit" class="btn btn-primary" asp-page="/Submit">Submit Review </button>
+
+        </form>
+    </div>
+</body>
+</html>
