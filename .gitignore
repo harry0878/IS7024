@@ -2,4 +2,13 @@ xmlproject/xmlproject/obj/Debug/net6.0/xmlproject.assets.cache
 .vs/
 obj/
 xmlproject/obj/
-xmlproject/xmlproject/bin/Debug/net6.0/xmlproject.staticwebassets.runtime.json
+
+/xmlproject/xmlproject/obj/Debug/
+/.vs/
+/xmlproject/xmlproject/obj/Debug/net6.0/project.razor.vs.json
+/xmlproject/xmlproject/obj/project.assets.json
+/xmlproject/xmlproject/obj/Debug/net6.0/xmlproject.assets.cache
+/xmlproject/xmlproject/obj/Debug/net6.0/xmlproject.GeneratedMSBuildEditorConfig.editorconfig
+/xmlproject/xmlproject/obj/project.nuget.cache
+/xmlproject/xmlproject/obj/xmlproject.csproj.nuget.dgspec.json
+/xmlproject/xmlproject/obj/xmlproject.csproj.nuget.g.props
