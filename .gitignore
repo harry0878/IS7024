@@ -363,3 +363,8 @@ MigrationBackup/
 FodyWeavers.xsd
 /xmlproject/.vs/xmlproject/v17/.suo
 /xmlproject/xmlproject/obj/Debug/net6.0/xmlproject.GeneratedMSBuildEditorConfig.editorconfig
+/xmlproject/xmlproject/obj/Debug/net6.0/xmlproject.assets.cache
+/xmlproject/xmlproject/obj/project.nuget.cache
+/xmlproject/xmlproject/obj/xmlproject.csproj.nuget.dgspec.json
+/xmlproject/xmlproject/obj/xmlproject.csproj.nuget.g.props
+/.vs/VSWorkspaceState.json
