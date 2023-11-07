@@ -1,0 +1,61 @@
+﻿@page
+@model xmlproject.Pages.ReviewFormModel
+@{
+}
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+
+<body>
+
+    <div class="container mt-5">
+        <h4> Rate Your Restaurant </h4>
+
+        <form id="suggest" class="needs-validation">
+
+            <div class="form-group">
+                <label for="name"> First Name </label>
+                <input type="text" class="form-control" id="FirstName" name="FirstName" required />
+            </div>
+            <div class="form-group">
+                <label for="name"> Last Name </label>
+                <input type="text" class="form-control" id="LastName" name="LastName" required />
+            </div>
+            <div class="form-group">
+                <label for="email"> Email </label>
+                <input type="email" class="form-control" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+                <label for="myimage"> Upload an Image: </label>
+                <input type="file" class="form-control" id="myimage" name="myimage" />
+            </div>
+            <div class="form-group">
+                <label for="rating">Rating</label>
+                <select class="form-control" id="rating" name="rating">
+                    <option value="1">1 star</option>
+                    <option value="2">2 stars</option>
+                    <option value="3">3 stars</option>
+                    <option value="4">4 stars</option>
+                    <option value="5">5 stars</option>
+                </select>
+            </div>
+
+
+            <div class="form-group">
+                <label for="directions">Tell us about your experience</label></br>
+                <textarea class="form-control" rows="5" cols="60" id="experience" name="experience" ></textarea>
+
+            </div>
+
+            <button type="submit" class="btn btn-primary" asp-page="/Submit">Submit Review </button>
+
+        </form>
+    </div>
+</body>
+</html>
