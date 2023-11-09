@@ -37,7 +37,7 @@ namespace InspectionData
 
         [JsonProperty("postal_code")]
         [JsonConverter(typeof(ParseStringConverter))]
-        public long PostalCode { get; set; }
+        public string PostalCode { get; set; }
 
         [JsonProperty("latitude")]
         public string Latitude { get; set; }
@@ -61,7 +61,7 @@ namespace InspectionData
         public string InspSubtype { get; set; }
 
         [JsonProperty("action_date")]
-        public DateTimeOffset ActionDate { get; set; }
+        public string ActionDate { get; set; }
 
         [JsonProperty("action_sequence")]
         public string ActionSequence { get; set; }
@@ -82,7 +82,7 @@ namespace InspectionData
         public string ViolationKey { get; set; }
 
         [JsonProperty("last_table_update")]
-        public DateTimeOffset LastTableUpdate { get; set; }
+        public string LastTableUpdate { get; set; }
 
         [JsonProperty("neighborhood")]
         public string Neighborhood { get; set; }

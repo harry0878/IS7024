@@ -30,7 +30,7 @@ namespace RatingData
         public string State { get; set; }
 
         [JsonProperty("Postal Code")]
-        public long PostalCode { get; set; }
+        public string PostalCode { get; set; }
 
         [JsonProperty("Reviews")]
         public string Reviews { get; set; }
