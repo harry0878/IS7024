@@ -21,8 +21,8 @@ namespace InspectionData
         public string RecordnumLicense { get; set; }
 
         [JsonProperty("license_no")]
-        public string LicenseNo { get; set; }
-
+        public int LicenseNo { get; set; }
+        // use datatype int for License No 
         [JsonProperty("business_name")]
         public string BusinessName { get; set; }
 
@@ -46,8 +46,8 @@ namespace InspectionData
         public string Longitude { get; set; }
 
         [JsonProperty("phone_number")]
-        public string PhoneNumber { get; set; }
-
+        public int PhoneNumber { get; set; }
+        // Use datatype int for Phone Number
         [JsonProperty("license_status")]
         public string LicenseStatus { get; set; }
 
