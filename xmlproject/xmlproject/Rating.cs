@@ -14,7 +14,15 @@ namespace RatingData
     using System.Globalization;
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
-
+    public enum StateEnum
+    {
+        // Define the possible values for the State property
+        Unknown,
+        NewYork,
+        California,
+        Texas,
+        // Add more as needed
+    }
     public partial class Rating
     {
         [JsonProperty("Name")]
@@ -27,7 +35,7 @@ namespace RatingData
         public string City { get; set; }
 
         [JsonProperty("State")]
-        public string State { get; set; }
+        public StateEnum State { get; set; } // Used the enum type
 
         [JsonProperty("Postal Code")]
         public string PostalCode { get; set; }
