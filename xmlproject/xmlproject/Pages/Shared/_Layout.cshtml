@@ -12,7 +12,7 @@
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-page="/Index">YumSafe</a>
+                 <a class="navbar-brand" asp-area="" asp-page="/Index"><img src="images/Logo.png" alt="YumSafe Logo" style="width:20%"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -28,7 +28,19 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/AboutYumSafe">About Us</a>
                         </li>
+                       
+                        
                     </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                                    <div class="row">
+                                        <div class="col">
+                                            <input class="form-control" type="search" placeholder="Restaurants" aria-label="Search">
+                                        </div>
+                                        <div class="col-auto">
+                                            <button class="btn btn-outline-success" type="submit">Search</button>
+                                        </div>
+                                    </div>
+                                </form>
                 </div>
             </div>
         </nav>
@@ -46,7 +58,20 @@
     </footer>
     -->
 
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+<div class="container">
+   <footer class="py-3 my-4">
+     <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+       <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Email: contactus@yumsafe.com</a></li>
+       <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Facebook</a></li>
+       <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Twiter</a></li>
+         <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Instagram</a></li>
+         
+     </ul>
+       <p class="text-center text-muted">&copy; 2023 YumSafe. All rights reserved.</p>
+   </footer>
+ </div>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
 
