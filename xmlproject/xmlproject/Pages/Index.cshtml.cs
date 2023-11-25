@@ -77,9 +77,9 @@ namespace xmlproject.Pages
                             customData.PhoneNumber = InspDict[Rating.Name].PhoneNumber;
                             customData.LicenseStatus = InspDict[Rating.Name].LicenseStatus;
                             customData.InspSubtype = InspDict[Rating.Name].InspSubtype;
-                            customData.ActionDate = InspDict[Rating.Name].ActionDate;
+                            customData.ActionDate = InspDict[Rating.Name].ActionDate.Split('T')[0];
                             customData.ViolationDesc = InspDict[Rating.Name].ViolationDescription;
-                            customData.Reviews = Rating.Reviews;
+                            customData.Reviews = Rating.Reviews.Split(' ')[0];
                             customData.NoOfReviews = Rating.NoOfReviews;
                             customDataList.Add(customData);
                         }
