@@ -2,6 +2,7 @@
 @model IndexModel
 @{
     ViewData["Title"] = "Home page";
+    List<DisplayTable> displayTables =(List<DisplayTable>)ViewData["DisplayTable"];
 }
 <!DOCTYPE html>
 <html lang="en">
@@ -227,7 +228,20 @@
             </div>
         </div>
     </div>
-
+    <table>
+        <thead>
+        <th>Name</th>
+        <th>Address</th>
+        <th>Review</th>
+        </thead>
+        @foreach(DisplayTable displayTable in displayTables){
+            <tr>
+                <td>@displayTable.Name</td>
+                <td>@displayTable.Address</td>
+                <td>@displayTable.Reviews</td>
+            </tr>
+        }
+    </table>
     <!-- Contact Information Section -->
     <div id="contact" class="contact-info">
         <div class="container">
