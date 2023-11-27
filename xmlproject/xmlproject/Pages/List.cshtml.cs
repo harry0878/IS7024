@@ -71,7 +71,7 @@ namespace xmlproject.Pages
                             customData.ActionDate = InspDict[Rating.Name].ActionDate.Split('T')[0];
                             customData.ViolationDesc = InspDict[Rating.Name].ViolationDescription;
                             customData.Reviews = Rating.Reviews.Split(' ')[0];
-                            customData.NoOfReviews = Rating.NoOfReviews;
+                            customData.NoOfReviews = Rating.NoOfReviews.Split('r')[0];
                             customDataList.Add(customData);
                         }
                     }

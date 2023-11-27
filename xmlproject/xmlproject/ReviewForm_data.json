@@ -14,5 +14,13 @@
     "Email": "abc123@gmail.com",
     "Rating": 4,
     "Review": "nice"
+  },
+  {
+    "RestaurantName": "kfc",
+    "FirstName": "navya",
+    "LastName": "p",
+    "Email": "abc@gmail.com",
+    "Rating": 4,
+    "Review": "nice"
   }
 ]
