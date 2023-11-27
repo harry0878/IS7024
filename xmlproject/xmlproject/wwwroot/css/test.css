@@ -1,0 +1,65 @@
+﻿body {
+    background-color: #f9f9f9; /* Light gray background */
+    font-family: 'Arial', sans-serif;
+    margin: 20px;
+}
+.navbar{
+    background-color: #7be0d8 !important;
+}
+
+h1 {
+    color: #e44d26; /* A shade of orange for header */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border: none; /* Remove table border */
+}
+
+th, td {
+    border: none; /* Remove cell borders */
+    padding: 10px;
+    text-align: left;
+}
+
+.testimonial-image-container {
+    width: 80px; /* Adjust the size of the circular container */
+    height: 80px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.testimonial-image {
+    width: 100%; /* Make the image fill the container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+tr:nth-child(even) {
+    background-color: white;
+}
+
+tr:nth-child(odd) {
+    background-color: light grey;
+}
+
+td {
+    padding: 10px;
+}
+
+img {
+    border-radius: 50%;
+}
+
+.testimonial-text {
+    font-style: italic;
+    font-size: 16px; /* Adjusted font size */
+    line-height: 1.4; /* Improved line spacing */
+}
