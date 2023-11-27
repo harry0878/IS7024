@@ -368,3 +368,6 @@ FodyWeavers.xsd
 /xmlproject/xmlproject/obj/xmlproject.csproj.nuget.dgspec.json
 /xmlproject/xmlproject/obj/xmlproject.csproj.nuget.g.props
 /.vs/VSWorkspaceState.json
+/xmlproject/xmlproject/obj/Debug/net6.0/xmlproject.RazorAssemblyInfo.cache
+/xmlproject/xmlproject/obj/Debug/net6.0/xmlproject.AssemblyInfo.cs
+/xmlproject/xmlproject/obj/Debug/net6.0/xmlproject.AssemblyInfoInputs.cache

@@ -1,0 +1,18 @@
+[
+  {
+    "RestaurantName": "Prime Cincinnati",
+    "FirstName": "navya",
+    "LastName": "pokuri",
+    "Email": "abc123@gmail.com",
+    "Rating": 5,
+    "Review": "good food"
+  },
+  {
+    "RestaurantName": "kfc",
+    "FirstName": "hima",
+    "LastName": "sri",
+    "Email": "abc123@gmail.com",
+    "Rating": 4,
+    "Review": "nice"
+  }
+]

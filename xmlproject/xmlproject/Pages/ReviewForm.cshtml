@@ -2,23 +2,22 @@
 @model xmlproject.Pages.ReviewFormModel
 @{
 }
-<html>
-<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-</head>
-
-<body>
 
     <div class="container mt-5">
         <h4> Rate Your Restaurant </h4>
 
-        <form id="suggest" class="needs-validation">
+        <form method="post">
 
+            <div class="form-group">
+                <label for="name"> Restaurant Name </label>
+                <input type="text" class="form-control" id="RestaurantName" name="RestaurantName" required />
+            </div>
             <div class="form-group">
                 <label for="name"> First Name </label>
                 <input type="text" class="form-control" id="FirstName" name="FirstName" required />
@@ -31,10 +30,7 @@
                 <label for="email"> Email </label>
                 <input type="email" class="form-control" id="email" name="email" required />
             </div>
-            <div class="form-group">
-                <label for="myimage"> Upload an Image: </label>
-                <input type="file" class="form-control" id="myimage" name="myimage" />
-            </div>
+
             <div class="form-group">
                 <label for="rating">Rating</label>
                 <select class="form-control" id="rating" name="rating">
@@ -45,17 +41,51 @@
                     <option value="5">5 stars</option>
                 </select>
             </div>
-
-
             <div class="form-group">
-                <label for="directions">Tell us about your experience</label></br>
-                <textarea class="form-control" rows="5" cols="60" id="experience" name="experience" ></textarea>
-
-            </div>
-
-            <button type="submit" class="btn btn-primary" asp-page="/Submit">Submit Review </button>
-
+                <label for="directions">Review</label>
+                <textarea class="form-control" rows="5" cols="60" id="review" name="Review"></textarea>
+                <div class="btn-box">
+                    <button type="submit">
+                        Submit
+                    </button>
+                </div>
+                </div>
         </form>
     </div>
-</body>
-</html>
+    <div style="text-align: center; margin: auto; padding-top: 20px;">
+        @if (Model.ReviewFormData != null && Model.ReviewFormData.Count > 0)
+        {
+            <h2>Restaurant Reviews</h2>
+            <table style="width: 80%; margin-top: 10px; margin-left: auto; margin-right: auto; border-collapse: collapse; border: 1px solid black;">
+                <thead>
+                    <tr>
+                        <th style="border: 1px solid black;">Restaurant Name</th>
+                        <th style="border: 1px solid black;">First Name</th>
+                        <th style="border: 1px solid black;">Last Name</th>
+                        <th style="border: 1px solid black;">Email</th>
+                        <th style="border: 1px solid black;">Rating</th>
+                        <th style="border: 1px solid black;">Review</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var data in Model.ReviewFormData)
+                    {
+                        <tr>
+                            <td style="border: 1px solid black;">@data.RestaurantName</td>
+                            <td style="border: 1px solid black;">@data.FirstName</td>
+                            <td style="border: 1px solid black;">@data.LastName</td>
+                            <td style="border: 1px solid black;">@data.Email</td>
+                            <td style="border: 1px solid black;">@data.Rating</td>
+                            <td style="border: 1px solid black;">@data.Review</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+        else
+        {
+            <p>No Reviews available.</p>
+        }
+    </div>
+
+

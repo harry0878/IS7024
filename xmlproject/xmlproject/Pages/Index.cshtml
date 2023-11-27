@@ -3,236 +3,90 @@
 @{
     ViewData["Title"] = "Home page";
 }
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
-
-    <style>
-        
-        body {
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-        }
 
 
-        .navbar {
-            background-color: antiquewhite;
-        }
-
-        .navbar-brand {
-            font-size: 24px;
-            color: #fff;
-        }
-
-        .navbar-nav .nav-link {
-            font-size: 18px;
-            color: #fff;
-        }
-
-        .navbar-toggler {
-            margin-right: 20px; /* Adjust the margin to increase or decrease space */
-        }
-        
-        .header {
-            background-image: url('images/Main25.jpg');
-            background-size: cover;
-            color: black;
-            padding: 100px;
-            text-align: center;
-            width: 1290px;
-            height: 620px;
-            border-radius: 30px;
-        }
-
-            .header h1 {
-                font-size: 60px;
-                margin-bottom: 20px;
-                font-family: "Times New Roman", Times, serif;
-            }
-
-            .header p {
-                font-size: 20px;
-            }
-
-        
-        .why-card {
-            background-image: url('images/Pine.jpg');
-            color: Black;
-            padding: 30px;
-            border-radius: 30px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-            width: 1290px;
-            height: 700px;
-        }
-
-            .why-card h2 {
-                font-size: 30px;
-                margin-bottom: 15px;
-            }
-
-        .card-title {
-            font-family: "Times New Roman", Times, serif;
-            color: Black;
-            font-size: 40px;
-        }
-
-        .card-title1 {
-            font-family: "Times New Roman", Times, serif;
-            color: Black;
-            font-size: 30px;
-        }
-
-        .card-text1 {
-            font-size: 20px;
-        }
-
-        .card-text2 {
-            font-size: 20px;
-        }
-        
-        .contact-info {
-            background-image: url('images/Lemon.jpg');
-            color: black;
-            padding: 30px;
-            border-radius: 30px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-            width: 1290px;
-            height: 250px;
-        }
-
-            .contact-info h2 {
-                font-size: 30px;
-                margin-bottom: 20px;
-                color: black;
-                font-family: "Sofia", sans-serif;
-            }
-
-            .contact-info p {
-                font-size: 20px;
-                color: Black;
-                font-family: "Sofia", sans-serif;
-            }
-
-        .footer {
-            position: fixed;
-            left: 0;
-            bottom: 0;
-            width: 100%;
-            background-color: lightyellow;
-            color: black;
-            text-align: center;
-            height: 100px;
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-end;
-            flex-wrap: wrap;
-        }
-
-            .footer h5 {
-                font-size: 15px;
-                color: black;
-            }
-
-            .footer p {
-                text-align: left;
-                color: black;
-                font-size: 15px;
-                font-family: Normal;
-            }
-
-        .column {
-            float: left;
-            width: 33.33%;
-            padding: 5px;
-            .row::after
-        }
-
-        {
-            content: "";
-            clear: both;
-            display: table;
-        }
-
-    </style>
-</head>
-<body>
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">
-            <img src="images/Logo.png" alt="YumSafe Logo" style="width:20%">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#why">Why YumSafe?</a>
-                </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <div class="row">
-                    <div class="col">
-                        <input class="form-control" type="search" placeholder="Restaurants" aria-label="Search">
-         
-
+    <div class="main-container mt-5">
+        <div class="container">
+            <div id="imageCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="~/Images/1.jpeg" class="d-block w-100" alt="Image 1">
+                        <div class="carousel-caption"></div>
                     </div>
-                    <div class="col-auto">
-                            <button class="btn btn-outline-success" type="submit">Search</button>
-</div>
+                    <div class="carousel-item">
+                        <img src="~/Images/2.jpeg" class="d-block w-100" alt="Image 2">
+                        <div class="carousel-caption"></div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="~/Images/3.jpeg" class="d-block w-100" alt="Image 3">
+                        <div class="carousel-caption"></div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="~/Images/4.jpeg" class="d-block w-100" alt="Image 4">
+                        <div class="carousel-caption"></div>
+                    </div>
 
-                    
                 </div>
-            </form>
-        </div>
-    </nav>
+                <a class="carousel-control-prev" href="#imageCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only"></span>
+                </a>
+                <a class="carousel-control-next" href="#imageCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only"></span>
+                </a>
+            </div>
 
-    <!-- Header Section -->
-    <div class="header">
-        <h1>Welcome to YumSafe</h1>
-        <p>Your Safest Bite, Every Time</p>
-    </div>
 
-    <div id="why" class="why-yumsafe?">
+            <!-- Featured Restaurants Section -->
+            <h2 class="text-center mb-4">Featured Restaurants</h2>
+            <div class="row featured-restaurants">
+
+    <div id="why" class="why-yumsafe">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
-                    <div class="card why-card">
-                        <div class="card-body">
-                            <p class="card-title">Why YumSafe?</p>
-                            <p class="card-text1">Do you hunger for insights into the cleanliness and safety of your favorite restaurants? Do you crave the latest restaurant inspection reports? Well, you've come to the right place!</p>
-                            <p class="card-title1">With YumSafe, you can</p>
-                            <p class="card-text2">Search for a specific restaurant and discover its inspection ratings.</p>
-                            <p class="card-text2">Read real user reviews and ratings to get a sense of the overall dining experience at a restaurant.</p>
-                            <p class="card-text2">Immerse yourself in the world of food safety, with up-to-the-minute inspection results at your fingertips.</p>
 
-                            <div class="row">
-                                <div class="column">
-                                    <img src="images/Main14.jpg" alt="Snow" style="width:100%">
-                                </div>
-                                <div class="column">
-                                    <img src="images/Main12.jpg" alt="Forest" style="width:100%">
-                                </div>
-                                <div class="column">
-                                    <img src="images/Main15.jpg" alt="Mountains" style="width:100%">
-                                </div>
-                            </div>
+                <div class="col-md-6">
+                    <div class="restaurant-card">
+                        <img src="~/Images/prime.jpg" class="restaurant-img" alt="Restaurant 1">
+                        <div class="restaurant-details">
+                            <h3 class="restaurant-name">Prime Cincinnati</h3>
+                            <p class="restaurant-description">
+                                .Steakhouses .Sea Food .Wine Bars<br />
+                                580 Walnut St Ste 100 Cincinnati, OH 45202
+                            </p>
+                            <p class="restaurant-rating">Rating: 4.8/5</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6">
+                    <div class="restaurant-card">
+                        <img src="~/Images/gp1.jpg" class="restaurant-img" alt="Restaurant 2">
+                        <div class="restaurant-details">
+                            <h3 class="restaurant-name">Green Papaya</h3>
+                            <p class="restaurant-description">
+                                .Thai Food .Sushi Bars<br />
+                                2942 Wasson Rd Cincinnati, OH 45209
+                            </p>
+                            <p class="restaurant-rating">Rating: 4.3/5</p>
+                        </div>
+                    </div>
                 </div>
+                <div class="col-md-6">
+                    <div class="restaurant-card">
+                        <img src="~/Images/cd.jpg" class="restaurant-img" alt="Restaurant 3">
+                        <div class="restaurant-details">
+                            <h3 class="restaurant-name">CINCY GOURMET DELI</h3>
+                            <p class="restaurant-description">
+                                .Sandwiches .Delis<br />
+                                2832 Jefferson Ave Cincinnati, OH 45219
+                            </p>
+                            <p class="restaurant-rating">Rating: 4.4/5</p>
+                        </div>
+                    </div>
             </div>
         </div>
     </div>
-
-    
 
     <div class="footer">
         <div class="footer-section">
@@ -251,6 +105,5 @@
             <a href="#">Instagram</a>
         </div>
     </div>
-</body>
-</html>
+
  
