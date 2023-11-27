@@ -36,7 +36,6 @@ namespace InspectionData
         public string State { get; set; }
 
         [JsonProperty("postal_code")]
-        [JsonConverter(typeof(ParseStringConverter))]
         public string PostalCode { get; set; }
 
         [JsonProperty("latitude")]
