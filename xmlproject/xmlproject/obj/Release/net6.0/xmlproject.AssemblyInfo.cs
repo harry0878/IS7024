@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("xmlproject")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ad40553ba5ee2079fedb68a9f5570c83844ae4cc")]
 [assembly: System.Reflection.AssemblyProductAttribute("xmlproject")]
 [assembly: System.Reflection.AssemblyTitleAttribute("xmlproject")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
