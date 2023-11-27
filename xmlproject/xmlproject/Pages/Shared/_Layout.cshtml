@@ -5,46 +5,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - YumSafe</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-B7ltx60RTU2TiPuj9v33JZ6P26dfTnoNTcDjOdB1Gaf0eAF6WSLzL20pPVaRgPw8uhB7lq8VSfTCGVEJZyZIvA==" crossorigin="anonymous" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/xmlproject.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/Layout.css" asp-append-version="true" />
+   
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom box-shadow mb-3">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-page="/Index">YumSafe</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand" asp-page="/Index">
+                    <img src="~/Images/logo.png" alt="Logo">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
+                            <a class="nav-link" asp-area="" asp-page="/AboutYumSafe"><strong>About US</strong></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/ReviewForm"> Review Restaurant</a>
+                            <a class="nav-link" asp-area="" asp-page="/Testimonials"><strong>Testimonials</strong></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/AboutYumSafe">About Us</a>
+                            <a class="nav-link" asp-area="" asp-page="/ReviewForm"><strong>Review a Restaurant</strong></a>
+                        </li>
+                        <li class="nav-item ml-auto">
+                            <strong>
+                                <a href="tel:+123456789" class="nav-link">
+                                    <span class="phone-icon">&#x260E;</span> Call Us: +123 456 789
+                                </a>
+                            </strong>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
+
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
-    <!--
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2023 - YumSafe - <a asp-area="" asp-page="/AboutYumSafe">About Us</a>
+    <footer  style="background-color: #7be0d8;">
+       <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h5>Announcements</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a href="#" class="text-muted">Latest News</a></li>
+                    
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>SERVICES</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a href="#" class="text-muted">Restaurant Ratings</a></li>
+                        <li><a href="#" class="text-muted">Restaurant Reviews</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>HEALTH RULES LAWS & FORMS</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a href="#" class="text-muted">Health Rules</a></li>
+                        <li><a href="#" class="text-muted">Laws & Regulations</a></li>
+                        
+                       
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>MEDIA CENTER</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a href="#" class="text-muted">Videos</a></li>
+                        <li><a href="#" class="text-muted">Photos</a></li>
+                        
+                    </ul>
+                </div>
+            </div>    
         </div>
     </footer>
-    -->
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

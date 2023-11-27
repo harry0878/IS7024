@@ -1,51 +1,34 @@
 ﻿@page
-@model xmlproject.Pages.AboutYumSafeModel
+@model AboutYumSafeModel
 @{
+    ViewData["Title"] = "About Us";
 }
-<style>
-	h2 {
-		color: black;
-		font-family: Papyrus;
-		font-size: 150%;
-	}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - YumSafe</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-B7ltx60RTU2TiPuj9v33JZ6P26dfTnoNTcDjOdB1Gaf0eAF6WSLzL20pPVaRgPw8uhB7lq8VSfTCGVEJZyZIvA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/xmlproject.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/Aboutus.css" asp-append-version="true" />
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Welcome to Yumsafe</h1>
+        <img src="~/Images/au.jpeg" alt="image1" width="1000"  class="header-image">
+        <div class="about-content">
+            <p class="about-text">YumSafe goes beyond your average restaurant search app. We provide you with comprehensive food inspection details for each restaurant listed on our platform. Our dedicated team meticulously compiles data from official sources to offer you real-time insights into a restaurant’s compliance with food safety regulations. We empower you to make informed decisions about where to eat, ensuring that your culinary adventures are not only delicious but also safe.</p>
+            <p class="about-text">With YumSafe, you can explore a wide range of restaurants in your area, knowing that each option has been thoroughly vetted. Our user-friendly interface allows you to search for restaurants based on your preferences, whether it's cuisine type, location, or specific dishes. You can read detailed reviews from fellow food enthusiasts, helping you choose a restaurant that suits your taste and expectations.</p>
+            <p class="about-text">At YumSafe, we are committed to promoting a culture of food safety and transparency in the restaurant industry. We believe that by encouraging restaurants to maintain high standards of hygiene, we contribute to the well-being of our community. Our platform acts as a bridge between conscientious diners and responsible restaurateurs, fostering an environment where everyone benefits.</p>
+            <p class="about-text">Become a part of the YumSafe community today and embark on a culinary journey filled with delectable delights and peace of mind. Whether you are a food lover seeking new gastronomic experiences or a restaurant owner dedicated to providing exceptional dining services, YumSafe welcomes you with open arms.</p>
+        </div>
+    </div>
 
-	p {
-		color: black;
-		font-family: Papyrus;
-		font-size: 100%;
-	}
-
-	strong {
-		color: black;
-		font-family: Papyrus;
-		font-size: 110%;
-	}
-
-	body {
-		color: rgba(0, 0, 0, 0.2);
-		position: center;
-	}
-
-		body::after {
-			content: "YumSafe";
-			position: fixed;
-			font-family: Papyrus;
-			font-size: 96px;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-		}
-</style>
-
-<body style="background-color:#d5dce8;">
-	<h2> Welcome to YumSafe:Eat Assured</h2>
-	<p>At YumSafe, we believe that everyone deserves a delightful dining experience, free from worries about food safety and hygiene. We understand the importance of enjoying a meal at a restaurant where food quality is paramount and where health and safety standards are met without compromise. That’s why we created the YumSafe app – your ultimate companion for finding the best restaurants without violations and ensuring your peace of mind every time you dine out.</p>
-	<strong>What Sets Us Apart? </strong>
-	<p>YumSafe goes beyond your average restaurant search app. We provide you with comprehensive food inspection details for each restaurant listed on our platform. Our dedicated team meticulously compiles data from official sources to offer you real-time insights into a restaurant’s compliance with food safety regulations. We empower you to make informed decisions about where to eat, ensuring that your culinary adventures are not only delicious but also safe. </p>
-	<strong>Explore with Confidence </strong>
-	<p>With YumSafe, you can explore a wide range of restaurants in your area, knowing that each option has been thoroughly vetted. Our user-friendly interface allows you to search for restaurants based on your preferences, whether it's cuisine type, location, or specific dishes. You can read detailed reviews from fellow food enthusiasts, helping you choose a restaurant that suits your taste and expectations.</p>
-	<strong>Our Commitment to You</strong>
-	<p>At YumSafe, we are committed to promoting a culture of food safety and transparency in the restaurant industry. We believe that by encouraging restaurants to maintain high standards of hygiene, we contribute to the well-being of our community. Our platform acts as a bridge between conscientious diners and responsible restaurateurs, fostering an environment where everyone benefits.</p>
-	<strong>Join the YumSafe Community </strong>
-	<p>Become a part of the YumSafe community today and embark on a culinary journey filled with delectable delights and peace of mind. Whether you are a food lover seeking new gastronomic experiences or a restaurant owner dedicated to providing exceptional dining services, YumSafe welcomes you with open arms.</p>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
 </body>
+</html>
