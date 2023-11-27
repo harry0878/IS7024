@@ -1,0 +1,41 @@
+﻿@page
+@model xmlproject.Pages.ListModel
+@{
+    List<DisplayTable> displayTables = (List<DisplayTable>)ViewData["DisplayTable"];
+
+}
+
+
+<table class="table table-bordered table-striped">
+    <thead class="thead-dark">
+        <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Postal Code</th>
+            <th>Phone</th>
+            <th>License Status</th>
+            <th>Inspection Type</th>
+            <th>Action Date</th>
+            <th>Violation Description</th>
+            <th>Reviews (Out of 5)</th>
+            <th>No. of Reviews</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (DisplayTable displayTable in displayTables)
+        {
+            <tr>
+                <td>@displayTable.Name</td>
+                <td>@displayTable.Address</td>
+                <td>@displayTable.PostalCode</td>
+                <td>@displayTable.PhoneNumber</td>
+                <td>@displayTable.LicenseStatus</td>
+                <td>@displayTable.InspType</td>
+                <td>@displayTable.ActionDate</td>
+                <td>@displayTable.ViolationDesc</td>
+                <td>@displayTable.Reviews</td>
+                <td>@displayTable.NoOfReviews</td>
+            </tr>
+        }
+    </tbody>
+</table>
