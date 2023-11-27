@@ -3,21 +3,7 @@
 @{
     ViewData["Title"] = "Home page";
 }
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>@ViewData["Title"] - YumSafe</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
-          integrity="sha512-B7ltx60RTU2TiPuj9v33JZ6P26dfTnoNTcDjOdB1Gaf0eAF6WSLzL20pPVaRgPw8uhB7lq8VSfTCGVEJZyZIvA=="
-          crossorigin="anonymous" />
-    <link rel="stylesheet" href="~/css/Index.css" asp-append-version="true" />
-</head>
-
-<body>
 
     <div class="main-container mt-5">
         <div class="container">
@@ -50,9 +36,15 @@
                 </a>
             </div>
 
+
             <!-- Featured Restaurants Section -->
             <h2 class="text-center mb-4">Featured Restaurants</h2>
             <div class="row featured-restaurants">
+
+    <div id="why" class="why-yumsafe">
+        <div class="container">
+            <div class="row">
+
                 <div class="col-md-6">
                     <div class="restaurant-card">
                         <img src="~/Images/prime.jpg" class="restaurant-img" alt="Restaurant 1">
@@ -91,6 +83,19 @@
                             <p class="restaurant-rating">Rating: 4.4/5</p>
                         </div>
                     </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Information Section -->
+    <div id="contact" class="contact-info">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <h2 class="font-effect-fire">Testimonials</h2>
+                    <p class="font-effect-fire">"YumSafe is a game-changer for parents. I can confidently choose restaurants that prioritize cleanliness for my family." - Sarah Smith, Resident, Cincinnati</p>
+                    <p class="font-effect-fire">"YumSafe is my dining companion wherever I go. The real-time updates and user reviews make it a must-have for restaurant-goers." - Jessica Mathews, Resident, Cincinnati</p>
+
                 </div>
                 <div class="col-md-6">
                     <div class="restaurant-card">
@@ -109,8 +114,23 @@
         </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
 
-</html>
+    <div class="footer">
+        <div class="footer-section">
+            <h4>Rights</h4>
+            <p>&copy; 2023 YumSafe. All rights reserved.</p>
+        </div>
+        <div class="footer-section">
+            <h4>Contact Us</h4>
+            <a href="#">Email: contactus@yumsafe.com</a>
+            <p>Phone: +1 (123) 456-7890</p>
+        </div>
+        <div class="footer-section">
+            <h4>Follow Us</h4>
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+    </div>
+
+ 
