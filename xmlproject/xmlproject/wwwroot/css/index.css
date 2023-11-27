@@ -1,146 +1,130 @@
-﻿
-body {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+﻿body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
 
 .navbar {
-    background-color: antiquewhite;
+    background-color: #7be0d8 !important;
 }
 
-.navbar-brand {
-    font-size: 24px;
-    color: #fff;
+.navbar-brand img {
+    max-width: 100px;
+    height: auto;
 }
 
 .navbar-nav .nav-link {
-    font-size: 18px;
-    color: #fff;
+    color: #ecf0f1;
 }
 
-
-.header {
-    background-image: url('/images/Main25.jpg');
-    background-size: cover;
-    color: black;
-    padding: 100px;
-    text-align: center;
-    width: 1290px;
-    height: 620px;
-    border-radius: 30px;
-}
-
-    .header h1 {
-        font-size: 60px;
-        margin-bottom: 20px;
-        font-family: "Times New Roman", Times, serif;
+    .navbar-nav .nav-link:hover {
+        color: #ffffff;
     }
 
-    .header p {
-        font-size: 20px;
-    }
-
-
-.why-card {
-    background-image: url('images/Pine.jpg');
-    color: Black;
-    padding: 30px;
-    border-radius: 30px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-    width: 1290px;
-    height: 700px;
+.navbar-toggler-icon {
+    color: #ecf0f1;
 }
 
-    .why-card h2 {
-        font-size: 30px;
-        margin-bottom: 15px;
-    }
-
-.card-title {
-    font-family: "Times New Roman", Times, serif;
-    color: Black;
-    font-size: 40px;
+.phone-icon {
+    margin-right: 5px;
 }
 
-.card-title1 {
-    font-family: "Times New Roman", Times, serif;
-    color: Black;
-    font-size: 30px;
-}
-
-.card-text1 {
-    font-size: 20px;
-}
-
-.card-text2 {
-    font-size: 20px;
-}
-
-.contact-info {
-    background-image: url('images/Lemon.jpg');
-    color: black;
-    padding: 30px;
-    border-radius: 30px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-    width: 1290px;
-    height: 250px;
-}
-
-    .contact-info h2 {
-        font-size: 30px;
-        margin-bottom: 20px;
-        color: black;
-        font-family: "Sofia", sans-serif;
-    }
-
-    .contact-info p {
-        font-size: 20px;
-        color: Black;
-        font-family: "Sofia", sans-serif;
-    }
-
-.footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
+/* Additional styles for the carousel */
+.main-container {
     width: 100%;
-    background-color: lightyellow;
-    color: black;
-    text-align: center;
-    height: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    flex-wrap: wrap;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
-    .footer h5 {
-        font-size: 15px;
-        color: black;
+h2 {
+    color: #343a40;
+}
+
+#imageCarousel {
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.carousel-item img {
+    max-height: 500px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    border-radius: 0 0 10px 10px;
+}
+
+    .carousel-caption h3 {
+        color: #ffffff;
     }
 
-    .footer p {
-        text-align: left;
-        color: black;
-        font-size: 15px;
-        font-family: Normal;
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+    background-color: rgba(52, 58, 64, 0.5);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #ffffff;
+}
+
+    .carousel-control-prev-icon::before,
+    .carousel-control-next-icon::before {
+        color: #343a40;
     }
 
-.column {
-    float: left;
-    width: 33.33%;
-    padding: 5px;
-    .row::after
+/* Additional styles for the featured restaurants section */
+.featured-restaurants {
+    margin-top: 15px;
+    margin-bottom: 50px;
 }
 
-{
-    content: "";
-    clear: both;
-    display: table;
+.restaurant-card {
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+    .restaurant-card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+.restaurant-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.restaurant-details {
+    padding: 20px;
+}
+
+.restaurant-name {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #343a40;
+}
+
+.restaurant-description {
+    color: #6c757d;
+}
+
+.restaurant-rating {
+    font-size: 18px;
+    color: #007bff;
+    margin-top: 10px;
+}
 
 table {
     width: 100%;

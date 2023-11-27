@@ -1,0 +1,25 @@
+﻿@page
+@using JSONDataModelCocktail
+@model xmlproject.Pages.CocktailListPageModel
+@{
+    CocktailDataModel cocktailsData = (CocktailDataModel)ViewData["Cocktaillist"];
+}
+<div class="container">
+    <div class="row g-3">
+        @if (cocktailsData != null) {
+            foreach (Drink drink in cocktailsData.Drinks) {
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                    <div class="card">
+                        <img class="card-img-top image-resize"  src=@drink.StrDrinkThumb.ToString()
+                        alt=@drink.StrDrink />
+                        <h5 class="card-title">@drink.StrDrink</h5>
+                        
+                    </div>
+
+                </div>
+            }
+        }
+       
+        
+    </div>
+</div>

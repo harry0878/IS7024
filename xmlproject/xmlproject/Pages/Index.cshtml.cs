@@ -5,6 +5,9 @@ using System.Net.Http;
 using Newtonsoft.Json.Schema;
 using InspectionData;
 using RatingData;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
 
 namespace xmlproject.Pages
 {
